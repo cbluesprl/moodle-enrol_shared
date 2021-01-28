@@ -371,6 +371,20 @@ class enrol_shared_plugin extends enrol_plugin {
 
             $ue->lastenrol = true; // means user not enrolled any more
         }
+        // Trigger event.
+        $event = \core\event\user_enrolment_deleted::create(
+            array(
+                'courseid' => $courseid,
+                'context' => $context,
+                'relateduserid' => $ue->userid,
+                'objectid' => $ue->id,
+                'other' => array(
+                    'userenrolment' => (array)$ue,
+                    'enrol' => $name
+                )
+            )
+        );
+        $event->trigger();
 
         // User enrolments have changed, so mark user as dirty.
         mark_user_dirty($userid);
@@ -443,6 +457,17 @@ class enrol_shared_plugin extends enrol_plugin {
         }
 
         if ($inserted) {
+            // Trigger event.
+            $event = \core\event\user_enrolment_created::create(
+                array(
+                    'objectid' => $ue->id,
+                    'courseid' => $courseid,
+                    'context' => $context,
+                    'relateduserid' => $ue->userid,
+                    'other' => array('enrol' => $name)
+                )
+            );
+            $event->trigger();
             // Check if course contacts cache needs to be cleared.
             core_course_category::user_enrolment_changed($courseid, $ue->userid,
                 $ue->status, $ue->timestart, $ue->timeend);
