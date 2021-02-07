@@ -23,7 +23,7 @@
  */
 
 $string['pluginname'] = 'Shared enrolments';
-$string['pluginname_desc'] = 'The shared enrolments plugin allows users to be enrolled automatically via ....'; // TODO
+$string['pluginname_desc'] = 'The shared enrolments plugin allows users to be enrolled automatically through another course';
 $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['status'] = 'Enable shared enrolments';
