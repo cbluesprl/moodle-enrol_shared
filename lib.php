@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Manual enrolment plugin main library file.
+ * Shared enrolment plugin main library file.
  *
  * @package    enrol_shared
  * @copyright  2021 CBlue SPRL

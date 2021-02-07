@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Capabilities for manual enrolment plugin.
+ * Capabilities for shared enrol plugin
  *
- * @package    enrol_manual
- * @copyright  2010 Petr Skoda {@link http://skodak.org}
+ * @package    enrol_shared
+ * @copyright : CBlue SPRL 2021
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

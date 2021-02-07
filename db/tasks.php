@@ -3,7 +3,7 @@
  * This script is owned by CBlue SPRL, please contact CBlue regarding any licences issues.
  *
  * @package    enrol_shared
- * @copyright  2021 CBlue SPRL
+ * @copyright : CBlue SPRL 2021
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

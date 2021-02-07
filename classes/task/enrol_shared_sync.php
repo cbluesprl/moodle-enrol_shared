@@ -1,9 +1,10 @@
 <?php
 /**
  * This script is owned by CBlue SPRL, please contact CBlue regarding any licences issues.
- * @author : xinghels@cblue.be
- * @date: 07.10.19
- * @copyright : CBlue SPRL
+ *
+ * @package    enrol_shared
+ * @copyright : CBlue SPRL 2021
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 namespace enrol_shared\task;
