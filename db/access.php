@@ -24,25 +24,23 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$capabilities = array(
-
+$capabilities = [
     /* Add, edit or remove manual enrol instance. */
-    'enrol/shared:config' => array(
+    'enrol/shared:config' => [
         'captype' => 'write',
         'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
+        'archetypes' => [
             'manager' => CAP_ALLOW,
-        )
-    ),
+        ]
+    ],
 
     /* Manage enrolments of users. */
-    'enrol/shared:manage' => array(
+    'enrol/shared:manage' => [
         'captype' => 'write',
         'contextlevel' => CONTEXT_COURSE,
-        'archetypes' => array(
+        'archetypes' => [
             'manager' => CAP_ALLOW,
             'editingteacher' => CAP_ALLOW,
-        )
-    ),
-
-);
+        ]
+    ],
+];

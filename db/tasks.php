@@ -9,8 +9,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$tasks = array(
-    array(
+$tasks = [
+    [
         'classname' => '\enrol_shared\task\enrol_shared_sync',
         'blocking' => 0,
         'minute' => '*/10',
@@ -19,5 +19,5 @@ $tasks = array(
         'month' => '*',
         'dayofweek' => '*',
         'disabled' => 0
-    )
-);
+    ]
+];

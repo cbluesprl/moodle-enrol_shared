@@ -13,16 +13,22 @@ use null_progress_trace;
 
 defined('MOODLE_INTERNAL') || die();
 
-class enrol_shared_sync extends \core\task\scheduled_task
-{
+class enrol_shared_sync extends \core\task\scheduled_task {
 
-    public function get_name()
-    {
+    /**
+     * @return \lang_string|string
+     * @throws \coding_exception
+     */
+    public function get_name() {
         return get_string('enrol_shared_sync', 'enrol_shared');
     }
 
-    public function execute()
-    {
+    /**
+     * @throws \coding_exception
+     * @throws \dml_exception
+     */
+    public function execute() {
+        /** @var \enrol_shared_plugin $enrol_plugin */
         $enrol_plugin = enrol_get_plugin('shared');
         $enrol_plugin->sync(new null_progress_trace());
     }

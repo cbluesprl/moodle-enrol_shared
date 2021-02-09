@@ -27,6 +27,7 @@ $string['pluginname_desc'] = 'The shared enrolments plugin allows users to be en
 $string['expiredaction'] = 'Enrolment expiry action';
 $string['expiredaction_help'] = 'Select action to carry out when user enrolment expires. Please note that some user data and settings are purged from course during course unenrolment.';
 $string['status'] = 'Enable shared enrolments';
+$string['status_help'] = 'This setting determines whether users can be enrolled through another course';
 $string['status_desc'] = 'Allow course access of internally enrolled users. This should be kept enabled in most cases.';
 $string['now'] = 'Now';
 $string['defaultstart'] = 'Default enrolment start';
