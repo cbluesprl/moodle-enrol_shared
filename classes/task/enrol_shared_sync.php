@@ -1,9 +1,9 @@
 <?php
 /**
- * This script is owned by CBlue SPRL, please contact CBlue regarding any licences issues.
+ * Shared enrolment plugin
  *
  * @package    enrol_shared
- * @copyright : CBlue SPRL 2021
+ * @copyright  2021 CBlue SPRL
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

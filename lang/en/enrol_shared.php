@@ -38,3 +38,5 @@ $string['defaultperiod_help'] = 'Default length of time that the enrolment is va
 // Tasks
 
 $string['enrol_shared_sync'] = 'Synchronise enrolments (unenrol user if delay is exceeded)';
+
+$string['privacy:metadata'] = 'The shared enrolment plugin does not store any personal data.';

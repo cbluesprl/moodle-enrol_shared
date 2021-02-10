@@ -39,3 +39,5 @@ $string['defaultperiod_help'] = "Durée pendant laquelle l'inscription est valid
 // Tasks
 
 $string['enrol_shared_sync'] = "Synchronise les inscriptions";
+
+$string['privacy:metadata'] = 'Le plugin shared enrol ne conserve aucune donnée personnelle.';
